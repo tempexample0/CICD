@@ -2,12 +2,13 @@
 //import {add} from './../service/addition.js';
 //var addHelp = require('./../service/addHelp')
 var addition = require('./../service/addition');
+var addFunction = require('./../math_functions/addFunction');
 
 var assert = require('assert');
-describe('Array', function() {
-  describe('#indexOf()', function() {
-    it('should return -1 when the value is not present', function(){
-      assert.equal(5, addition.add(2, 3));
+describe('Testing', function() {
+  describe('Addition', function() {
+    it('Test Case 1: 2 + 3 = 5', function(){
+      assert.equal(addFunction.add(2, 3), 5);
     });
   });
 });
