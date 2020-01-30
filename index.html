@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Site</title>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <style>
+        body { padding-top:50px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>The CI/CD Demo: Add two numbers</h1>
+        </div>
+        <form>
+            A:<br>
+            <input type="text" name="numA"><br>
+            B:<br>
+            <input type="text" name="numB">
+        </form>
+        
+        <form method="get" action="/addition/3/5">
+            <button type="submit">A + B = ?</button>
+        </form>
+    </div>
+
+</body>
+</html>

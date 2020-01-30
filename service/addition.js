@@ -1,6 +1,6 @@
 var request = require('request');
 var addFunction = require('./../math_functions/addFunction');
-
+var fs = require('fs');
 
 var addition = {
     find: function(req, res, next) {
