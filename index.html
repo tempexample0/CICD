@@ -15,17 +15,32 @@
         <div class="jumbotron">
             <h1>The CI/CD Demo: Add two numbers</h1>
         </div>
-        <form>
+        <form id="mathForm">
             A:<br>
             <input type="text" name="numA"><br>
             B:<br>
             <input type="text" name="numB">
         </form>
-        
-        <form method="get" action="/addition/3/5">
+        <button onclick="doMath()">A + B = ?</button>
+        <!--<form method="get" action="/addition/3/5">
             <button type="submit">A + B = ?</button>
-        </form>
+        </form>-->
     </div>
+<script>
+function doMath() {
+  var x = document.getElementById("mathForm");
+  //var text = "";
+  var num1 = "";
+  var num2 = "";
+  //var i;
+  num1 = x.elements[0].value;
+  num2 = x.elements[1].value;
+  /*for (i = 0; i < x.length ;i++) {
+    text += parseInt(x.elements[i].value);
+  }*/
+  window.location.href = 'http:/addition/' + num1 +'/' + num2;
+}
+</script>
 
 </body>
 </html>
