@@ -13,19 +13,20 @@
 
     <div class="container">
         <div class="jumbotron">
-            <h1>The CI/CD Demo: Add two numbers (VERSION 2)</h1>
+            <h1>The CI/CD Demo: Add Two Numbers</h1>
         </div>
-        <form>
-            A:<br>
-            <input type="text" name="numA"><br>
-            B:<br>
-            <input type="text" name="numB">
+        <form id="ApB">
+            <br>
+            A: <input type="text" name="fname"><br>
+            B: <input type="text" name="lname"><br><br>
         </form>
-        
-        <form method="get" action="/addition/3/5">
-            <button type="submit">A + B = ?</button>
-        </form>
+        <button onclick="addF()"> A + B = ? </button>
     </div>
-
+    <script>
+        function addF() {
+          var x = document.getElementById("ApB");
+          window.location.href = "addition/" + x.elements[0].value + "/" + x.elements[1].value;
+        }
+    </script>
 </body>
 </html>
